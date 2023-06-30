@@ -3,6 +3,7 @@ pip install pipreqs
 pipreqs --encoding=utf8
 """
 from flask import Flask, render_template, request
+from flask_socketio import SocketIO
 import pickle
 import pandas as pd
 import numpy as np
