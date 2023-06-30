@@ -43,3 +43,5 @@ def recommend():
 
 if __name__ == '__main__':
     socketio.run(app, debug=True)
+
+python3 __init__.py
