@@ -8,6 +8,8 @@ import pickle
 import pandas as pd
 import numpy as np
 
+sio = SocketIO()
+
 popular_df = pickle.load(open('popular.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 books = pickle.load(open('books.pkl','rb'))
@@ -42,4 +44,4 @@ def recommend():
     return render_template('recommend.html',data=data)
 
 if __name__ == '__main__':
-    SocketIO.run(SocketIO,app=app, debug=True)
+    sio.run(app=app, debug=True)
