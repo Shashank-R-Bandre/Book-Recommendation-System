@@ -3,12 +3,9 @@ pip install pipreqs
 pipreqs --encoding=utf8
 """
 from flask import Flask, render_template, request
-from flask_socketio import SocketIO
 import pickle
 import pandas as pd
 import numpy as np
-
-sio = SocketIO()
 
 popular_df = pickle.load(open('popular.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
@@ -44,4 +41,4 @@ def recommend():
     return render_template('recommend.html',data=data)
 
 if __name__ == '__main__':
-    sio.run(app=app, debug=True)
+    app.run(debug=True)
