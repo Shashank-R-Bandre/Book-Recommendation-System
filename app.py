@@ -42,6 +42,4 @@ def recommend():
     return render_template('recommend.html',data=data)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
-
-python3 __init__.py
+    SocketIO.run(app, debug=True)
