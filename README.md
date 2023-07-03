@@ -35,7 +35,7 @@
 
 * On recommendation page, 10 books will be recommended which is based on **collaborative filtering.**
 
-# VIDEO :-
+## VIDEO :-
 
 https://github.com/Shashank-R-Bandre/Book-Recommendation-System/assets/137071327/bb006a50-f4f9-458b-bd18-661a635a6f8f
 
